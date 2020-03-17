@@ -9,7 +9,7 @@ import PIL.Image as Image
 import time
 # 网页配置部分
 st.title('Welcome AI HaiKu!')
-img = Image.open("./pic/haiku", "r")
+img = Image.open("./pic/haiku.png", "r")
 st.image(img)
 temperature = st.sidebar.slider('temperature:', 0.1, 0.9, 0.3, 0.1)
 num = st.sidebar.slider('haiku nums:', 1, 50, 1, 1)
